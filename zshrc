@@ -10,11 +10,8 @@ source $ZSH/oh-my-zsh.sh
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
 
-# Set projects director
+# Set projects directory
 export PROJECTS="$HOME/Projects"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Aliases
 alias reload!="source $HOME/.zshrc"
@@ -22,7 +19,7 @@ alias zshconfig="$EDITOR ~/.zshrc"
 
 # Config
 fpath=(~/.zsh/functions $fpath)
-autoload -Uz ~/.zsh/functions/*(:t)
+autoload -U ~/.zsh/functions/*(:t)
 
 bindkey '^[^[[D' backward-word
 bindkey '^[^[[C' forward-word
