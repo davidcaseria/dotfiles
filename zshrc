@@ -1,7 +1,7 @@
 # ZSH config
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="geoffgarside"
-plugins=(git)
+plugins=(aws brew git git-flow httpie knife node npm postgres redis-cli sbt scala spring sudo supervisor terraform web-search)
 
 # User configuration
 export PATH=$HOME/bin:/usr/local/bin:$PATH
