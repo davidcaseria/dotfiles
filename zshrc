@@ -1,6 +1,6 @@
 # ZSH config
 export ZSH=$HOME/.oh-my-zsh
-export ZSH_THEME="geoffgarside"
+export ZSH_THEME="ys"
 plugins=(aws brew git git-flow httpie knife node npm postgres redis-cli sbt scala spring sudo supervisor terraform web-search)
 
 # User configuration
