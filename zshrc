@@ -16,6 +16,7 @@ export PROJECTS="$HOME/Projects"
 
 # Aliases
 alias reload!="source $HOME/.zshrc"
+alias yj="ruby -ryaml -rjson -e 'puts JSON.generate(YAML.load(ARGF))'"
 alias zshconfig="$EDITOR ~/.zshrc"
 
 # Config
