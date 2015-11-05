@@ -1,6 +1,7 @@
 # ZSH config
 export ZSH=$HOME/.oh-my-zsh
-export ZSH_THEME="geoffgarside"
+export ZSH_CUSTOM=$HOME/.dotfiles/zsh/custom
+export ZSH_THEME="david"
 plugins=(aws brew git git-flow httpie knife node npm postgres redis-cli sbt scala spring sudo supervisor terraform web-search)
 
 # User configuration
