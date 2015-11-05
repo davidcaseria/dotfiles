@@ -109,9 +109,6 @@ set visualbell
 " is unset, this does nothing.
 set t_vb=
  
-" Enable use of the mouse for all modes
-set mouse=a
-
 " Display line numbers on the left
 set number
  
@@ -120,6 +117,9 @@ set notimeout ttimeout ttimeoutlen=200
  
 " Use <F11> to toggle between 'paste' and 'nopaste'
 set pastetoggle=<F11>
+
+" Change colorscheme
+colorsheme desert
  
  
 "------------------------------------------------------------
