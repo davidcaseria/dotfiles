@@ -119,7 +119,7 @@ set notimeout ttimeout ttimeoutlen=200
 set pastetoggle=<F11>
 
 " Change colorscheme
-colorsheme desert
+colorscheme desert
  
  
 "------------------------------------------------------------
