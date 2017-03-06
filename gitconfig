@@ -1,3 +1,10 @@
 [user]
   name = David Caseria
   email = davidcaseria@gmail.com
+[include]
+	path = /Users/david/.gitconfig.reflow
+	path = /Users/david/.gitconfig.reflow
+	path = /Users/david/.gitconfig.reflow
+[reflow]
+	always-cleanup = true
+	always-deliver = true
