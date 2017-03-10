@@ -1,6 +1,6 @@
 # ZSH config
 export ZSH=$HOME/.oh-my-zsh
-export ZSH_CUSTOM=$HOME/Projects/dotfiles/zsh/custom
+export ZSH_CUSTOM=$HOME/.dotfiles/zsh/custom
 export ZSH_THEME="david"
 plugins=(aws brew docker git httpie kubectl node npm pip postgres python redis-cli sbt scala sudo supervisor terraform)
 
