@@ -6,7 +6,7 @@ plugins=(aws brew docker git httpie kubectl node npm pip postgres python redis-c
 
 # User configuration
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="$PATH:`yarn global bin`"
+command -v yarn >/dev/null 2>&1 || { export PATH="$PATH:`yarn global bin`" }
 source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
@@ -17,10 +17,8 @@ export PROJECTS="$HOME/Projects"
 
 # Aliases
 alias reload!="source $HOME/.zshrc"
-alias yj="ruby -ryaml -rjson -e 'puts JSON.generate(YAML.load(ARGF))'"
-alias zshconfig="$EDITOR ~/.zshrc"
 
-# Config
+# Completion functions
 fpath=(~/.zsh/functions $fpath)
 autoload -U ~/.zsh/functions/*(:t)
 autoload -Uz compinit
