@@ -7,6 +7,7 @@ plugins=(aws docker git httpie node npm pip postgres python redis-cli sbt scala 
 # User configuration
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 command -v yarn >/dev/null 2>&1 && { export PATH="$PATH:`yarn global bin`" }
+command -v docker-machine >/dev/null 2>&1 && { eval "$(docker-machine env boot2docker)" }
 source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
