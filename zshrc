@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM=$HOME/.dotfiles/zsh/custom
 export ZSH_THEME="david"
-plugins=(aws brew docker git httpie kubectl node npm pip postgres python redis-cli sbt scala sudo)
+plugins=(aws docker git httpie node npm pip postgres python redis-cli sbt scala sudo)
 
 # User configuration
 export PATH=$HOME/bin:/usr/local/bin:$PATH
