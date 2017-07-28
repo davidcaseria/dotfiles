@@ -1,0 +1,2 @@
+#!/bin/bash
+git rebase -i $(git merge-base $(git branch | grep '*' | tr -d '* ') master)
