@@ -16,6 +16,7 @@ command -v docker-machine >/dev/null 2>&1 && { eval "$(docker-machine env boot2d
 command -v rbenv >/dev/null 2>&1 && { eval "$(rbenv init -)" }
 command -v yarn >/dev/null 2>&1 && { export PATH="$PATH:`yarn global bin`" }
 source $ZSH/oh-my-zsh.sh
+if [ -f ~/Projects/aws-accounts/iam/utils.sh ]; then source ~/Projects/aws-accounts/iam/utils.sh; fi
 
 # Completion functions
 fpath=(~/.zsh/functions $fpath)
