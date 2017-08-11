@@ -15,6 +15,8 @@ export PATH=$HOME/.aliases:$HOME/bin:/usr/local/bin:$PATH
 command -v docker-machine >/dev/null 2>&1 && { eval "$(docker-machine env boot2docker)" }
 command -v rbenv >/dev/null 2>&1 && { eval "$(rbenv init -)" }
 command -v yarn >/dev/null 2>&1 && { export PATH="$PATH:`yarn global bin`" }
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 source $ZSH/oh-my-zsh.sh
 if [ -f $PROJECTS/aws-accounts/iam/utils.sh ]; then source $PROJECTS/aws-accounts/iam/utils.sh; fi
 
@@ -31,6 +33,3 @@ bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^[^N' newtab
 bindkey '^?' backward-delete-char
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
