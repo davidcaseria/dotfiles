@@ -1,4 +1,5 @@
 set nocompatible
+silent! py3 pass
 
 " Enable vim plugins (https://github.com/junegunn/vim-plug)
 call plug#begin()
@@ -6,39 +7,19 @@ Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'ervandew/supertab'
 Plug 'raimondi/delimitmate'
+Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/asyncomplete-gocode.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/vim-lsp'
-
-if executable('pyls')
-    " pip install python-language-server
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'pyls',
-        \ 'cmd': {server_info->['pyls']},
-        \ 'whitelist': ['python'],
-        \ })
-endif
+Plug 'valloric/youcompleteme'
 call plug#end()
-
-" Enable golang autocompletion
-call asyncomplete#register_source(asyncomplete#sources#gocode#get_source_options({
-    \ 'name': 'gocode',
-    \ 'whitelist': ['go'],
-    \ 'completor': function('asyncomplete#sources#gocode#completor'),
-    \ }))
-set completeopt-=preview
 
 " Set misc settings
 set autoindent
 set backspace=indent,eol,start
 set clipboard=unnamed
+set completeopt-=preview
 set confirm
 set copyindent
 set hidden
