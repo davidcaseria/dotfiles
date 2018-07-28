@@ -5,6 +5,7 @@ silent! py3 pass
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
+Plug 'davidhalter/jedi-vim'
 Plug 'ervandew/supertab'
 Plug 'raimondi/delimitmate'
 Plug 'scrooloose/nerdcommenter'
@@ -37,6 +38,7 @@ set shiftwidth=4
 set showcmd
 set smartcase
 set softtabstop=0
+set splitright
 set t_vb=
 set tabstop=4
 set visualbell
@@ -50,8 +52,3 @@ colorscheme solarized
 " Change key maapings
 nnoremap <C-A> :NERDTreeToggle<CR>
 nnoremap <C-L> :nohl<CR><C-L>
-nnoremap <C-R> :GoRun<CR>
-imap <C-R> <ESC>:w<CR>:GoRun<CR>
-
-" Enable auto commands for python
-autocmd FileType python nnoremap <buffer> <C-R> :exec '!clear; python3' shellescape(@%, 1)<CR>
