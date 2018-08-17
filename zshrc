@@ -17,9 +17,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Completion functions
 fpath=(~/.zsh/functions $fpath)
+compdef '_files -W $PROJECTS -/' p
+compdef '_files -W $PROJECTS/go/src -/' gosrc
 autoload -U ~/.zsh/functions/*(:t)
-autoload -Uz compinit
-compinit
+#autoload -Uz compinit
+#compinit
 
 bindkey '^[^[[D' backward-word
 bindkey '^[^[[C' forward-word

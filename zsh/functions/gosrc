@@ -1,0 +1,9 @@
+#!/bin/zsh
+#
+# This lets you quickly jump into a Go src project directory.
+#
+# Usage:
+#
+#   gosrc <tab>
+
+cd "$PROJECTS/go/src/$1"
