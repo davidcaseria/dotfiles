@@ -23,6 +23,7 @@ set clipboard=unnamed
 set completeopt-=preview
 set confirm
 set copyindent
+set encoding=utf-8
 set hidden
 set hlsearch
 set ignorecase
@@ -38,6 +39,7 @@ set shiftwidth=4
 set showcmd
 set smartcase
 set softtabstop=0
+set splitbelow
 set splitright
 set t_vb=
 set tabstop=4
@@ -49,6 +51,7 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-" Change key maapings
+" Add shortcut key maapings
+imap <C-R> <ESC>:w<CR>:GoRun<CR>
 nnoremap <C-A> :NERDTreeToggle<CR>
 nnoremap <C-L> :nohl<CR><C-L>
