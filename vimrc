@@ -6,6 +6,7 @@ call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'davidhalter/jedi-vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'ervandew/supertab'
 Plug 'raimondi/delimitmate'
 Plug 'scrooloose/nerdcommenter'
